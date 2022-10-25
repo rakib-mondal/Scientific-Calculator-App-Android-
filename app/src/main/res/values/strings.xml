@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Calcamia</string>
+        <!--    operator-->
+    <string name="clear">C</string>
+    <string name="brackets">( )</string>
+<!--<string name="exponent">^</string>-->
+    <string name="divide">÷</string>
+    <string name="multiply">×</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="plusMinus">+/-</string>
+    <string name="dot">.</string>
+    <string name="equal">=</string>
+    <string name="percent">%</string>
+        <!--    numbers-->
+    <string name="zero">0</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="seven">7</string>
+    <string name="eight">8</string>
+    <string name="nine">9</string>
+
+    <string name="backspace"></string>
+
+<!--    landscape mode scientific notations-->
+    <string name="sin">sin</string>
+    <string name="cos">cos</string>
+    <string name="tan">tan</string>
+    <string name="inverse">1/x</string>
+    <string name="sinInverse">sin<sup>-1</sup></string>
+    <string name="cosInverse">cos<sup>-1</sup></string>
+    <string name="tanInverse">tan<sup>-1</sup></string>
+    <string name="log">lg</string>
+    <string name="ln">ln</string>
+    <string name="sqrt">√</string>
+    <string name="e">e</string>
+    <string name="pi">π</string>
+    <string name="factorial">x!</string>
+    <string name="square">x<sup>2</sup></string>
+    <string name="squareY">x<sup>y</sup></string>
+    <string name="reciprocal">1/x</string>
+
+
+
+
+
+
+    <string name="display">Φ</string>
+
+
+</resources>

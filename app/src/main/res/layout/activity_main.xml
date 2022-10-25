@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.98"
+        tools:layout_editor_absoluteX="59dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buC"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/circle"
+                android:onClick="clearBtn"
+                android:text="@string/clear"
+                android:textColor="@color/orange"
+                android:textSize="27sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buBrackets"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/circle"
+                android:onClick="bracketsBtn"
+                android:text="@string/brackets"
+                android:textColor="@color/orange"
+                android:textSize="27sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buPercent"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:text="@string/percent"
+                android:onClick="modBtn"
+                android:textColor="@color/orange"
+                android:textSize="30sp"
+                android:background="@drawable/circle"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buDiv"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:text="@string/divide"
+                android:onClick="divideBtn"
+                android:textColor="@color/orange"
+                android:textSize="30sp"
+                android:background="@drawable/circle"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/bu7"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:text="@string/seven"
+                android:onClick="sevenBtn"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:background="@drawable/circle"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/bu8"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:text="@string/eight"
+                android:onClick="eightBtn"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:background="@drawable/circle"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/bu9"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:text="@string/nine"
+                android:onClick="nineBtn"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:background="@drawable/circle"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buMultiply"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:text="@string/multiply"
+                android:onClick="multiplyBtn"
+                android:textColor="@color/orange"
+                android:textSize="30sp"
+                android:background="@drawable/circle"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/bu4"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:text="@string/four"
+                android:onClick="fourBtn"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:background="@drawable/circle"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/bu5"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:text="@string/five"
+                android:onClick="fiveBtn"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:background="@drawable/circle"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/bu6"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:text="@string/six"
+                android:onClick="sixBtn"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:background="@drawable/circle"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buMinus"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:text="@string/minus"
+                android:onClick="minusBtn"
+                android:textColor="@color/orange"
+                android:textSize="30sp"
+                android:background="@drawable/circle"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/bu1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:text="@string/one"
+                android:onClick="oneBtn"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:background="@drawable/circle"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/bu2"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:text="@string/two"
+                android:onClick="twoBtn"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:background="@drawable/circle"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/bu3"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:text="@string/three"
+                android:onClick="threeBtn"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:background="@drawable/circle"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buPlus"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:text="@string/plus"
+                android:onClick="plusBtn"
+                android:textColor="@color/orange"
+                android:textSize="30sp"
+                android:background="@drawable/circle"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buPlusMinus"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:text="@string/plusMinus"
+                android:onClick="plusMinusBtn"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:background="@drawable/circle"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/bu0"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:text="@string/zero"
+                android:onClick="zeroBtn"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:background="@drawable/circle"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buDot"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:text="@string/dot"
+                android:onClick="dotBtn"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:background="@drawable/circle"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buEqual"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:text="@string/equal"
+                android:onClick="equalBtn"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:background="@drawable/circle"
+                android:backgroundTint="@color/orange"/>
+        </TableRow>
+    </TableLayout>
+
+    <EditText
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:autofillHints="false"
+        android:inputType="none"
+        android:paddingRight="10dp"
+        android:text="@string/display"
+        android:textAlignment="textEnd"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/buBackspace"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:onClick="backspaceBtn"
+        android:contentDescription=""
+        android:background="@drawable/circle"
+        app:srcCompat="@drawable/backspace"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
